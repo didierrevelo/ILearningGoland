@@ -18,4 +18,16 @@ func main(){
 		"Boca Juniors": 30,
 	}
 	fmt.Println(campeonato)
+
+	campeonato["River Plate"] = 25
+	campeonato["Chivas"] = 55
+	delete(campeonato, "Real Madrid")
+	fmt.Println(campeonato)
+
+	for equipo, puntaje := range campeonato{
+		fmt.Printf("El equipo %s, tiene un puntaje de: %d\n", equipo, puntaje)
+	}
+	puntaje, existe := campeonato["Chivas"]
+	fmt.Printf("el puntaje capturado es %d, y el equipo existe %t \n", puntaje, existe)
+
 }
