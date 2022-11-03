@@ -6,6 +6,7 @@ import (
 	"time"
 
 	us "ejer10/user"
+
 )
 
 
@@ -14,7 +15,6 @@ type pepe struct{
 }
 func main() {
 	u := new(pepe)
-	fmt.Println(u)
 	u.HigUser(1, "Juan", "Perez", "juanperez@gmail.com", time.Now(), true)
 	fmt.Println(u.Users)
 }
