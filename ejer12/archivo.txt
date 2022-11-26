@@ -1,0 +1,2 @@
+hola 
+bienvenidos al curso de Go desde 0
